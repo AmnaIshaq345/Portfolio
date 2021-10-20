@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+:root{
+    --background-color: #52595D;
+
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--background-color) !important;
+}
+/* nav-bar styling*/
+.nav_section .navbar-brand{
+    font-size: 22px !important;
+    transition: 0.3s;
+
+}
+.nav_section .navbar-nav li{
+    margin: 0px 8px;
+}
+.nav_section .navbar-nav li a{
+    margin: 0px 8px;
+    color: white !important;
+    font-size: 15px !important;
+}
+.nav_section .navbar-nav .nav-link::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.7px;
+}
+.nav_section .navbar-nav .nav-link:hover:before{
+    content: '';
+    width: 17px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+}
+/*Home Page Styling*/
+.home_page .row{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.home_page .row h1, h2, h3{
+    color: white !important;
+    font-size: 35px;
+}
+.home_page .row p{
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+.home_page .row h3{
+    font-size: 25px;
+    font-weight:300;
+    margin-bottom: 15px ;
+}
+.home_page .row h3::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+    height: 2px;
+    background-color: white;
+    margin-left: 6px;
+}
+.home_page .row button{
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    background-color: palevioletred;
+    border: 3px solide palevioletred;
+    width:113px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+.home_page .row button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+.home_page .row img{
+    width: 50%;
+    border-radius: 30%;
+
+}
+/* About Me*/
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+section .title span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600px;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .content .middle{
+    text-align: center;
+    color: white;
+    padding: 0 120px;
+}
+.button button{
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    background-color: palevioletred;
+    border: 3px solide palevioletred;
+    width:152px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 450px;
+}
+.button button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+
+/*Projects*/
+
+.title h1{
+    color: white !important;
+    font-size: 35px;
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  
+  .mySlides {
+    display: none;
+    
+  }
+  
+ 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+ 
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ 
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/*Skill*/
+.inner{
+    padding-top: 75px;
+}
+.header{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    Left: 50%;
+    transform: translateX(-50px);
+    height: 4px;
+    width: 100px;
+}
+.container1{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skill-box{
+    padding: 1rem;
+    cursor: pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.image{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.skill-icon{
+    width: 50px;
+}
+
+  /*Contact*/
+  /* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .container3 {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+ 
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
